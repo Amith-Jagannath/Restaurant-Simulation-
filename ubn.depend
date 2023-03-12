@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1677608897 source:c:\users\hp\documents\ubn\main.cpp
+1677661441 source:c:\users\hp\documents\ubn\main.cpp
 	<fstream>
 	<iostream>
 	<stdlib.h>

@@ -36,6 +36,9 @@ void display() {
    //glMaterialfv(GL_FRONT, GL_DIFFUSE, mat_diffuse);
 
    // Draw the room
+    glColor3f(44.0f/255.0f, 54.0f/255.0f, 57.0f/255.0f);
+     glColor3f(158.0f/255.0f, 118.0f/255.0f, 118.0f/255.0f);
+      glColor3f(1.0, 0.0, 0.0);
    glBegin(GL_QUADS);
    glColor3f(1.0, 1.0, 1.0);
    glVertex3f(-2.0, -2.0, -2.0);
@@ -47,8 +50,11 @@ void display() {
 
 
 
-  glColor3f(0.7, 0.89, 0.67);
-   glClearColor(223.0f/255.0f, 255.0f/255.0f, 216.0f/255.0f,1.0);
+  //glColor3f(167.0f/255.0f, 114.0f/255.0f, 125.0f/255.0f);
+  glColor3f(158.0f/255.0f, 118.0f/255.0f, 118.0f/255.0f);
+
+   glClearColor(231.0f/255.0f, 171.0f/255.0f, 121.0f/255.0f,1.0);
+
 //left wall
   // Draw a rectangle with vertices (0, 0), (0, 1), (1, 1), (1, 0)
   glBegin(GL_QUADS);
@@ -86,6 +92,35 @@ void display() {
     glBegin(GL_LINES); // enable line drawing mode
     glVertex2f(0.0, -1.414); // specify first vertex
     glVertex2f(0.0, 0.215); // specify second vertex
+    glEnd();
+
+      glColor3f(0.0, 0.0, 0.0); // set color to red
+    glBegin(GL_LINES); // enable line drawing mode
+    glVertex2f(1.43, -1.43);
+  glVertex2f(1.43, 4.0);
+    glEnd();
+     glColor3f(0.0, 0.0, 0.0); // set color to red
+    glBegin(GL_LINES); // enable line drawing mode
+    glVertex2f(-1.43, -1.43);
+  glVertex2f(-1.43, 4.0);
+    glEnd();
+
+    glColor3f(0.0, 0.0, 0.0); // set color to red
+    glBegin(GL_LINES); // enable line drawing mode
+  glVertex2f(-1.43, -1.43);
+  glVertex2f(-3, -3.0);
+    glEnd();
+
+     glColor3f(0.0, 0.0, 0.0); // set color to red
+    glBegin(GL_LINES); // enable line drawing mode
+  glVertex2f(1.43, -1.43);
+  glVertex2f(3, -3.0);
+    glEnd();
+
+     glColor3f(0.0, 0.0, 0.0); // set color to red
+    glBegin(GL_LINES); // enable line drawing mode
+  glVertex2f(1.43, -1.43);
+  glVertex2f(-1.43, -1.43);
     glEnd();
 
    char* wel ="WELCOME";
@@ -195,7 +230,7 @@ void Display()
 {
     glColor3f(0.0f, 0.0f, 0.0f);  // Set the text color
 
-   char* rest = "RESTAURANT";
+   char* rest = "THE IMPERIAL";
     char* name="Name";
     char* usn="USN";
     char* amith="Amith Jagannath Soorenji";
@@ -203,7 +238,7 @@ void Display()
     char* usn23="4NM20CS023";
     char* usn10="4NM20CS010";
     char* next ="Next";
-    char* sir="Under the guidance of Dr Pradeep Kanchan and Mr Puneet";
+    char* sir="Under the guidance of Dr Pradeep Kanchan and Mr Puneet RP";
 
          glRasterPos2f(-9.0f, 80.0f);
           displayString(rest);
@@ -221,7 +256,7 @@ void Display()
    displayString(usn23);
      glRasterPos2i(34.0f,54.0f);
     displayString(usn10);
-    glRasterPos2i(-55.0f,46.0f);
+    glRasterPos2i(-35.0f,46.0f);
     displayString(sir);
     glColor3f(0.6f, 9.0f, 8.0f);
     glPushMatrix();
